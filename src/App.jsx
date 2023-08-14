@@ -6,10 +6,12 @@ import { EffectComposer } from 'postprocessing'
 function App() {
 
   return (
-    <Canvas shadows camera={{ position: [-1, 1, 2.7], fov: 40}}>
+    <Canvas gl={{ localClippingEnabled: true }} shadows camera={{ position: [-0.15, 0, 7], fov: 40}}>
         <Experience/>
       {/* <EffectComposer/> */}
+      
     </Canvas>
+    
   )
 }
 
