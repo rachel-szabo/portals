@@ -3,7 +3,7 @@ import { LayerMaterial, Noise } from "lamina"
 import { useFrame } from '@react-three/fiber'
 import { useRef } from 'react'
 
-export default function Perlin ({colorB, colorC, ...props}){
+export default function Perlin ({colorA, colorB, colorC, ...props}){
 
     const perRef = useRef()
 
@@ -25,10 +25,10 @@ export default function Perlin ({colorB, colorC, ...props}){
                     ref={perRef} 
                     type='perlin' 
                     scale={0.0095}
-                    colorA={'black'}
+                    colorA={colorA}
                     colorB={colorB}
                     colorC={colorC}
-                    colorD={'black'}
+                    colorD={colorA}
                     mapping='local'
                     offset={[5.5,-1.9,-0.5]}
                     strength={16}

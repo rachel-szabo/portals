@@ -9,3 +9,19 @@ body, html, #root {
 .portalDiv {
   background-color: aqua;
 }
+
+.loadingScreen {
+  text-align: center;
+  top: 0px;
+  left: 0px;
+  background-color: rgb(212, 5, 5);
+  color: aliceblue;
+  border-radius: 50%;
+  border: 1px solid black;
+  width: 500px;
+  height: 500px;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
